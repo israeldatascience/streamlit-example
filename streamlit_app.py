@@ -20,7 +20,7 @@ st.dataframe(df)
 n = st.slider("Choose a multiplier of your growth - DESIRED GROWTH:", 2,100)
 # MULTIPLICATE THE LAST DATE AND ALL DF
  
-df3.iloc[:,1:] = df3.iloc[:,1:] * n
+df2.iloc[:,1:] = df2.iloc[:,1:] * n
 column = df2['16/01/2023'] 
 
 st.write("""DESIRED GROWTH: """)
