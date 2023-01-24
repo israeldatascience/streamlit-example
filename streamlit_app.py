@@ -24,5 +24,5 @@ df3.iloc[:,1:] = df3.iloc[:,1:] * n
 column = df2['16/01/2023'] 
 
 st.write("""DESIRED GROWTH: """)
-st.dataframe(df3)
+st.dataframe(df2)
 st.dataframe(column)
