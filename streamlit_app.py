@@ -7,9 +7,10 @@ import streamlit as st
 """
 # Dados básicos do IG:
 """
+st.write(""" Perfect""")
+
 # Read CSV file from GitHub repository
-url = "https://github.com/israeldatascience/streamlit-example/blob/master/dados1.csv"
-df = pd.read_csv(url)
+df = pd.read_csv("data1.csv")
 
 # Display data in a Streamlit dataframe
 st.dataframe(df)
