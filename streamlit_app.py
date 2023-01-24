@@ -10,7 +10,7 @@ import streamlit as st
 st.write(""" Perfect""")
 
 # Read CSV file from GitHub repository
-df = pd.read_csv("data1.csv")
+df = pd.read_csv("dados1.csv")
 
 # Display data in a Streamlit dataframe
 st.dataframe(df)
