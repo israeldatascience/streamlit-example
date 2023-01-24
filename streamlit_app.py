@@ -17,7 +17,7 @@ df = pd.read_csv("dados1.csv")
 
 # Display data in a Streamlit dataframe
  
-column = df.loc[df.index >= 1, 'SETEMBRO']
+column = df.loc[df.index >= 3, 'SETEMBRO']
 column = column.applymap(lambda x: x*n)
 
 st.dataframe(column)
