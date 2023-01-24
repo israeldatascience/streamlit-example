@@ -16,8 +16,9 @@ n = st.slider("Pick a number", 0,100)
 df = pd.read_csv("dados1.csv")
 
 # Display data in a Streamlit dataframe
+df = df.applymap(lambda x: x*n)
  
-column = df.loc[df.index >= 3, 'SETEMBRO']
-column = column.applymap(lambda x: x*n)
+column = df.loc[df.index >= 1, 'SETEMBRO'] 
 
 st.dataframe(column)
+st.write(n)
