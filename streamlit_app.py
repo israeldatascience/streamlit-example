@@ -14,7 +14,7 @@ df2 = df
 df3 = df
 # MULTIPLICATE THE LAST DATE AND ALL DF
 df2['16/01/2023'] = df2['16/01/2023'] * n
-column = df2.['16/01/2023'] 
+column = df2['16/01/2023'] 
 df3.iloc[:,1:] = df3.iloc[:,1:] * n
 
 st.write("""LAST MEASURE - YOUR RESULTS""")
