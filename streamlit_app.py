@@ -17,7 +17,7 @@ df = pd.read_csv("dados1.csv")
 
  
  
- 
+df.loc[df.index >= 3,'DECIEMBRE'] = df.loc[df.index >= 3,'DECIEMBRE'] * n
 column = df.loc[df.index >= 1, 'DECIEMBRE'] 
 
 st.dataframe(column)
