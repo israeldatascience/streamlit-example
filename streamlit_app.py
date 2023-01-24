@@ -9,8 +9,12 @@ import streamlit as st
 """
 st.write(""" Perfect""")
 
+# 
+number = st.slider("Pick a number", 0,100)
+
 # Read CSV file from GitHub repository
 df = pd.read_csv("dados1.csv")
 
 # Display data in a Streamlit dataframe
-st.dataframe(df)
+column = df['SETEMBRO']*number
+st.dataframe(column)
